@@ -1,0 +1,6 @@
+flask initdb
+Initialized the database
+
+pasta:flaskr/flaskr
+export FLASK_APP=flaskr.py
+flask run

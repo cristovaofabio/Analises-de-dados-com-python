@@ -1,0 +1,6 @@
+<!doctype html>
+<title>Elementos Nulos</title>
+<h1></h1>
+{% for x in valores %}
+	<h4>{{ x }}</h4>
+{% endfor %}

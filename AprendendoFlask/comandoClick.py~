@@ -1,0 +1,9 @@
+import os
+import sqlite3
+from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash
+
+@app.cli.command('initdb')
+def initdb_command():
+    """Creates the database tables."""
+    init_db()
+    print('Initialized the database.')

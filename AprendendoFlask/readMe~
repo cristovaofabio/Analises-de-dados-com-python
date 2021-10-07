@@ -1,0 +1,5 @@
+flask initdb
+Initialized the database
+
+export FLASK_APP=flaskr.py
+flask run

@@ -1,0 +1,19 @@
+<html>
+  <body>
+      <h2>Escolha um arquivo</h2>
+      <form action="/transform" method="post" enctype="multipart/form-data">
+          <input type="file" name="data_file" />
+			<input type="submit" value="Ver arquivo" name="Submit2" />
+      </form>
+		{% if df!=Null %}
+			<h3>Os 5 primeiros valores da tabela:</h3>
+		{% endif %}
+		{{ df|safe }}
+		{% if valores!=[] %}
+			<h3>Colunas com elementos nulos:</h3>
+			{% for x in valores %}
+				<h4>{{ x }}</h4>
+			{% endfor %}
+		{% endif %}
+  </body>
+</html>
